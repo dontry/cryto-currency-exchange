@@ -1,5 +1,6 @@
 {
   "extends": "stylelint-config-standard",
+  "ignoreFiles": ["**/*.js"],
   "rules": {
     "value-list-comma-newline-after": "always-multi-line",
     "declaration-colon-newline-after": "always-multi-line"

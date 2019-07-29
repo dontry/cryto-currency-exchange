@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PriceTable should render table with currency data 1`] = `
+<table
+  class="sc-bdVaJa dRchuH"
+>
+  <thead
+    class="sc-bwzfXH eLxnQL"
+  >
+    <tr
+      class="sc-htpNat ngmkp"
+    >
+      <th
+        class="sc-bxivhb ccwLpn"
+      >
+        Currency
+      </th>
+      <th
+        class="sc-bxivhb ccwLpn"
+      >
+        Date
+      </th>
+      <th
+        class="sc-bxivhb ccwLpn"
+      >
+        Time
+      </th>
+      <th
+        class="sc-bxivhb ccwLpn"
+      >
+        Price
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    class="sc-ifAKCX eRQhwu"
+  >
+    <tr
+      class="sc-htpNat ngmkp"
+      data-testid="table-row"
+    >
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        BTC
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        20180507
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        0915
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        34.98
+      </td>
+    </tr>
+    <tr
+      class="sc-htpNat ngmkp"
+      data-testid="table-row"
+    >
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        BTC
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        20180507
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        1045
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        36.13
+      </td>
+    </tr>
+    <tr
+      class="sc-htpNat ngmkp"
+      data-testid="table-row"
+    >
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        BTC
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        20180507
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        1230
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        37.01
+      </td>
+    </tr>
+    <tr
+      class="sc-htpNat ngmkp"
+      data-testid="table-row"
+    >
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        BTC
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        20180507
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        1400
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        35.98
+      </td>
+    </tr>
+    <tr
+      class="sc-htpNat ngmkp"
+      data-testid="table-row"
+    >
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        BTC
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        20180507
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        1530
+      </td>
+      <td
+        class="sc-EHOje kxMuyp"
+      >
+        33.56
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
