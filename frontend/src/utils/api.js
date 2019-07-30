@@ -6,7 +6,7 @@ const CancelToken = axios.CancelToken;
 
 //    --header 'apiToken: <API_TOKEN>' \ --header 'Content-Type: application/json' \ --header 'Accept: application/json' \ --url <URL>
 const options = {
-  // baseURL: "http://localhost:8686",
+  baseURL: "http://localhost:8686",
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json"

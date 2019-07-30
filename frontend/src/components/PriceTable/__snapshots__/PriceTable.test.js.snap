@@ -8,7 +8,7 @@ exports[`PriceTable should render table with currency data 1`] = `
     class="sc-bwzfXH eLxnQL"
   >
     <tr
-      class="sc-htpNat ngmkp"
+      class="sc-htpNat bHqcnd"
     >
       <th
         class="sc-bxivhb fvlChS"
@@ -36,7 +36,7 @@ exports[`PriceTable should render table with currency data 1`] = `
     class="sc-ifAKCX eRQhwu"
   >
     <tr
-      class="sc-htpNat ngmkp"
+      class="highlight sc-htpNat bHqcnd"
       data-testid="table-row"
     >
       <td
@@ -47,21 +47,22 @@ exports[`PriceTable should render table with currency data 1`] = `
       <td
         class="sc-EHOje jVTQFx"
       >
-        20180507
+        2018-05-07
       </td>
       <td
         class="sc-EHOje jVTQFx"
       >
-        0915
+        09:15
       </td>
       <td
         class="sc-EHOje lkukOB"
       >
+        $
         34.98
       </td>
     </tr>
     <tr
-      class="sc-htpNat ngmkp"
+      class="highlight sc-htpNat bHqcnd"
       data-testid="table-row"
     >
       <td
@@ -72,21 +73,22 @@ exports[`PriceTable should render table with currency data 1`] = `
       <td
         class="sc-EHOje jVTQFx"
       >
-        20180507
+        2018-05-07
       </td>
       <td
         class="sc-EHOje jVTQFx"
       >
-        1045
+        10:45
       </td>
       <td
         class="sc-EHOje lkukOB"
       >
+        $
         36.13
       </td>
     </tr>
     <tr
-      class="sc-htpNat ngmkp"
+      class="highlight sc-htpNat bHqcnd"
       data-testid="table-row"
     >
       <td
@@ -97,21 +99,22 @@ exports[`PriceTable should render table with currency data 1`] = `
       <td
         class="sc-EHOje jVTQFx"
       >
-        20180507
+        2018-05-07
       </td>
       <td
         class="sc-EHOje jVTQFx"
       >
-        1230
+        12:30
       </td>
       <td
         class="sc-EHOje lkukOB"
       >
+        $
         37.01
       </td>
     </tr>
     <tr
-      class="sc-htpNat ngmkp"
+      class="highlight sc-htpNat bHqcnd"
       data-testid="table-row"
     >
       <td
@@ -122,21 +125,22 @@ exports[`PriceTable should render table with currency data 1`] = `
       <td
         class="sc-EHOje jVTQFx"
       >
-        20180507
+        2018-05-07
       </td>
       <td
         class="sc-EHOje jVTQFx"
       >
-        1400
+        14:00
       </td>
       <td
         class="sc-EHOje lkukOB"
       >
+        $
         35.98
       </td>
     </tr>
     <tr
-      class="sc-htpNat ngmkp"
+      class="highlight sc-htpNat bHqcnd"
       data-testid="table-row"
     >
       <td
@@ -147,16 +151,17 @@ exports[`PriceTable should render table with currency data 1`] = `
       <td
         class="sc-EHOje jVTQFx"
       >
-        20180507
+        2018-05-07
       </td>
       <td
         class="sc-EHOje jVTQFx"
       >
-        1530
+        15:30
       </td>
       <td
         class="sc-EHOje lkukOB"
       >
+        $
         33.56
       </td>
     </tr>
