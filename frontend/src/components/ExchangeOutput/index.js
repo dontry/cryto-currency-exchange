@@ -6,7 +6,7 @@ import {
   StyledFieldWrapper,
   StyledSectionWrapper
 } from "./style";
-import { formatTime, formatDate, calculateProfit } from "./utils";
+import { formatTime, formatDate } from "../../utils";
 
 const InfoField = ({ title, label, text }) => (
   <StyledFieldWrapper>
@@ -15,22 +15,20 @@ const InfoField = ({ title, label, text }) => (
   </StyledFieldWrapper>
 );
 
-const InfoSection = ({ title, info }) => {
+const InfoSection = ({ title, info = {} }) => {
   const { time, price } = info;
   const fomattedTime = formatTime(time);
   return (
     <StyledSectionWrapper>
       <StyledTitle>{title}</StyledTitle>
-      <InfoField label="Price:" text={price} />
+      <InfoField label="Price:" text={price ? `$${price}` : "--"} />
       <InfoField label="Time:" text={fomattedTime} />
     </StyledSectionWrapper>
   );
 };
 
-const ExchangeOutput = props => {
-  const { buy, sell, date } = props;
+const ExchangeOutput = ({ buy, sell, profit, date = "" }) => {
   const formattedDate = formatDate(date);
-  const profit = calculateProfit(buy.price, sell.price);
 
   return (
     <StyledWrapper>
@@ -39,7 +37,7 @@ const ExchangeOutput = props => {
       <InfoSection title="Sell" info={sell} />
       <StyledSectionWrapper>
         <StyledLabel fontWeight="bold">Profit:</StyledLabel>
-        <StyledText>{profit}</StyledText>
+        <StyledText>{profit ? `$${profit}` : "--"}</StyledText>
       </StyledSectionWrapper>
     </StyledWrapper>
   );
@@ -54,7 +52,8 @@ ExchangeOutput.propTypes = {
   sell: PropTypes.shape({
     time: PropTypes.string,
     price: PropTypes.string
-  })
+  }),
+  profit: PropTypes.string
 };
 
 export default ExchangeOutput;

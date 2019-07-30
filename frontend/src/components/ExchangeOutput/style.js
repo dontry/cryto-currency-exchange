@@ -21,4 +21,6 @@ export const StyledLabel = styled.label`
 
 export const StyledText = styled.span``;
 
-export const StyledDate = styled.span``;
+export const StyledDate = styled.span`
+  font-weight: bold;
+`;
