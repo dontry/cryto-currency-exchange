@@ -4,11 +4,9 @@ import {
   SELECT_ROW,
   GET_PRICES_SUCCESS,
   GET_PRICES_FAILURE,
-  GET_PRICES_REQUEST,
-  UPDATE_CURRENCY_QUERY,
-  UPDATE_DATE_QUERY
+  GET_PRICES_REQUEST
 } from "./actions";
-import { TOGGLE_DRAWER } from "../DrawerContainer/actions";
+import { getMaxProfitFromGivenPriceIndex } from "../../utils";
 
 const initialState = {
   prices: [],
@@ -27,27 +25,6 @@ const prices = (state = initialState.prices, { type, payload }) => {
   }
 };
 
-const selectedCurrency = (
-  state = initialState.selectedCurrency,
-  { type, payload }
-) => {
-  switch (type) {
-    case UPDATE_CURRENCY_QUERY:
-      return payload.query;
-    default:
-      return state;
-  }
-};
-
-const selectedDate = (state = initialState.selectedDate, { type, payload }) => {
-  switch (type) {
-    case UPDATE_DATE_QUERY:
-      return payload.query;
-    default:
-      return state;
-  }
-};
-
 const selectedRowIndex = (
   state = initialState.selectedRowIndex,
   { type, payload }
@@ -57,6 +34,8 @@ const selectedRowIndex = (
       return payload.index;
     // case TOGGLE_DRAWER:
     // return payload.toggled === false ? -1 : state;
+    case GET_PRICES_SUCCESS:
+      return -1;
     default:
       return state;
   }
@@ -75,7 +54,7 @@ const loading = (state = initialState.loading, { type, payload }) => {
 };
 
 export const selectPriceList = state => {
-  state.prices.reduce((list, price) => {
+  return state.table.prices.reduce((list, price) => {
     const { currency, date, quotes } = price;
     const rows = quotes.map(q => ({
       currency,
@@ -87,7 +66,7 @@ export const selectPriceList = state => {
   }, []);
 };
 
-export const selectRowIndex = state => state.prices.selectedRowIndex;
+export const selectRowIndex = state => state.table.selectedRowIndex;
 
 export const selectPriceByRow = createSelector(
   selectPriceList,
@@ -97,10 +76,30 @@ export const selectPriceByRow = createSelector(
   }
 );
 
+export const getExchangeInfo = createSelector(
+  selectPriceList,
+  selectRowIndex,
+  (priceList, rowIndex) => {
+    if (priceList.length === 0 || rowIndex === -1) return null;
+    const price = priceList[rowIndex];
+    const sameCurrencyList = priceList
+      .filter(p => p.currency === price.currency && p.date === price.date)
+      .sort((a, b) => a.time < b.time);
+    const buyIndex = sameCurrencyList.findIndex(ele => ele.time === price.time);
+    return getMaxProfitFromGivenPriceIndex(sameCurrencyList, buyIndex);
+  }
+);
+
+export const selectDateByRow = createSelector(
+  selectPriceList,
+  selectRowIndex,
+  (list, index) => {
+    return list[index] ? list[index].date : null;
+  }
+);
+
 export default combineReducers({
   prices,
   selectedRowIndex,
-  selectedCurrency,
-  selectedDate,
   loading
 });

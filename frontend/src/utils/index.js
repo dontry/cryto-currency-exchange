@@ -1,9 +1,17 @@
 export function formatTime(time) {
-  return time.substr(0, 2) + ":" + time.substr(2);
+  if (time) {
+    return time.substr(0, 2) + ":" + time.substr(2);
+  } else {
+    return "--";
+  }
 }
 
 export function formatDate(date) {
-  return date.substr(0, 4) + "-" + date.substr(4, 2) + "-" + date.substr(6);
+  if (date) {
+    return date.substr(0, 4) + "-" + date.substr(4, 2) + "-" + date.substr(6);
+  } else {
+    return "--";
+  }
 }
 
 export function calculateProfit(buyPrice = 0, sellPrice = 0) {
@@ -39,7 +47,12 @@ export function getMaxProfitFromGivenPriceIndex(prices, buyIndex) {
 
   return {
     buy: prices[buyIndex],
-    sell: prices[sellIndex],
+    sell: maxProfit ? prices[sellIndex] : {},
     profit: maxProfit
   };
+}
+
+export function cleanObject(obj) {
+  Object.keys(obj).forEach(key => obj[key] == null && delete obj[key]);
+  return obj;
 }

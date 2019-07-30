@@ -17,6 +17,12 @@ export const StyledTableRow = styled.tr`
   display: table-row;
   outline: none;
   vertical-align: middle;
+  user-select: none;
+  cursor: pointer;
+  &:hover.highlight {
+    border: 2px solid #412d9c;
+    color: #412d9c;
+  }
 `;
 
 export const StyledTableHeadCell = styled.th`

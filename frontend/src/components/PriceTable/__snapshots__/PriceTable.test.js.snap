@@ -2,7 +2,7 @@
 
 exports[`PriceTable should render table with currency data 1`] = `
 <table
-  class="sc-bdVaJa dRchuH"
+  class="sc-bdVaJa zfbnR"
 >
   <thead
     class="sc-bwzfXH eLxnQL"
@@ -11,22 +11,22 @@ exports[`PriceTable should render table with currency data 1`] = `
       class="sc-htpNat ngmkp"
     >
       <th
-        class="sc-bxivhb ccwLpn"
+        class="sc-bxivhb fvlChS"
       >
         Currency
       </th>
       <th
-        class="sc-bxivhb ccwLpn"
+        class="sc-bxivhb fvlChS"
       >
         Date
       </th>
       <th
-        class="sc-bxivhb ccwLpn"
+        class="sc-bxivhb fvlChS"
       >
         Time
       </th>
       <th
-        class="sc-bxivhb ccwLpn"
+        class="sc-bxivhb ihKVfE"
       >
         Price
       </th>
@@ -40,22 +40,22 @@ exports[`PriceTable should render table with currency data 1`] = `
       data-testid="table-row"
     >
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         BTC
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         20180507
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         0915
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje lkukOB"
       >
         34.98
       </td>
@@ -65,22 +65,22 @@ exports[`PriceTable should render table with currency data 1`] = `
       data-testid="table-row"
     >
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         BTC
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         20180507
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         1045
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje lkukOB"
       >
         36.13
       </td>
@@ -90,22 +90,22 @@ exports[`PriceTable should render table with currency data 1`] = `
       data-testid="table-row"
     >
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         BTC
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         20180507
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         1230
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje lkukOB"
       >
         37.01
       </td>
@@ -115,22 +115,22 @@ exports[`PriceTable should render table with currency data 1`] = `
       data-testid="table-row"
     >
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         BTC
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         20180507
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         1400
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje lkukOB"
       >
         35.98
       </td>
@@ -140,22 +140,22 @@ exports[`PriceTable should render table with currency data 1`] = `
       data-testid="table-row"
     >
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         BTC
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         20180507
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje jVTQFx"
       >
         1530
       </td>
       <td
-        class="sc-EHOje kxMuyp"
+        class="sc-EHOje lkukOB"
       >
         33.56
       </td>
