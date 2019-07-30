@@ -1,6 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const price = require("./routes/price.route"); // Imports routes for the products
+const currency = require("./routes/currency.route"); // Imports routes for the products
+const date = require("./routes/date.route");
 const models = require("./models");
 const seed = require("./models/seed");
 const errorHandler = require("./middlewares/errorhandler.middleware");
@@ -22,7 +24,9 @@ app
   .get("/", (req, res) => {
     return res.send("Crypto currency exchange backend");
   })
-  .use(price);
+  .use(price)
+  .use(date)
+  .use(currency);
 
 db.connectDb().then(async () => {
   if (process.env.SEED_DATABASE) {
@@ -34,3 +38,5 @@ db.connectDb().then(async () => {
     console.log(`Server is up and running on port  ${port}`);
   });
 });
+
+module.exports = app;
