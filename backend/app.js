@@ -13,8 +13,11 @@ const port = 8686;
 // initialize our express app
 const app = express();
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*"); 
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
   next();
 });
 app.use(
@@ -34,8 +37,10 @@ app
   .use(currency);
 
 db.connectDb().then(async () => {
-  if (process.env.SEED_DATABASE) {
-    // await models.Price.deleteMany({});
+  const res = await models.Price.find();
+  console.log("prices:", res);
+  if (res.length === 0) {
+    console.log("seed prices");
     await seed.createPrices();
   }
 
