@@ -17,7 +17,7 @@ Please install Node.js and MongoDB for this project. Please launch MongoDB befor
   - `npm install`
   - `npm start`
 
-[image](../doc/screenshot1.PNG)
+![image](./doc/screenshot1.PNG)
 
 # Others
 
